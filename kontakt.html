@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | PUSTERUM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Se kontaktformularen på PUSTERUM, et digitalt frirum med inspiration til små pauser og mere ro i hverdagen."
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">PUSTERUM</a>
+
+        <nav aria-label="Hovednavigation">
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="find-ro.html">Find din ro</a></li>
+                <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero kontakt-hero">
+            <h1>Kontakt os</h1>
+            <p>Har du spørgsmål eller feedback? Vi vil meget gerne høre fra dig!</p>
+        </section>
+
+        <div class="kontakt-layout">
+        <section class="kontakt">
+            <h2>Send os en besked</h2>
+            <form>
+                <label for="navn">Navn:</label>
+                <input type="text" id="navn" name="navn" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="besked">Besked:</label>
+                <textarea id="besked" name="besked" rows="5" required></textarea>
+
+                <button type="button">Send besked</button>
+            </form>
+
+            <p class="formular-info">
+                Bemærk: Formularen er en demonstration og sender ikke beskeder.
+            </p>
+        </section>
+        <img src="images/lavendernotebook.jpg"
+        alt="lavendel og notesbog på lys baggrund"
+        class="kontakt-billede">
+        </div>
+    </main>
+<footer>
+    <p>PUSTERUM - Et øjeblik til dig.</p>
+</footer>
+
+</body>
+</html>
