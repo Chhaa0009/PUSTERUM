@@ -96,11 +96,15 @@ main {
     background-color: #4d6380;
 }
 
+.find-ro-tekst .button {
+    margin: 8px 5px;
+}
+
 .intro {
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 25px;
-    background-color: #e6e0f0;
+    background-color: rgba(230, 224, 240, 0.90);
     border-radius: 12px;
     text-align: center;
 }
@@ -291,21 +295,15 @@ main {
 
 .forside-hero {
     max-width: none;
-    min-height: 500px;
+    min-height: auto;
     box-sizing: border-box;
     padding: 40px 24px 70px;
-
-    background-image: url('../images/calmocean.webp');
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     border-radius: 0;
     margin-bottom: 25px;
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
@@ -314,7 +312,7 @@ main {
     max-width: 650px;
     margin: 0 auto;
     padding: 30px;
-    background-color: rgba(230, 224, 240, 0.80);
+    background-color: rgba(230, 224, 240, 0.90);
     border-radius: 12px;
     text-align: center;
 }
@@ -345,6 +343,11 @@ main {
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
+
+    background-image: url("../images/calmocean.webp");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 600px) {
@@ -370,7 +373,7 @@ main {
     max-width: 800px;
     margin: 30px auto 0;
     padding: 30px;
-    background-color: rgba(230, 224, 240, 0.80);
+    background-color: rgba(230, 224, 240, 0.90);
     border-radius: 12px;
     box-sizing: border-box;
 }
@@ -416,7 +419,7 @@ main {
 .find-ro-tekst {
     max-width: 600px;
     padding: 25px;
-    background-color: rgba(230, 224, 240, 0.92);
+    background-color: rgba(230, 224, 240, 0.90);
     border-radius: 12px;
 }
 
@@ -440,8 +443,12 @@ main {
 .kontakt-hero {
     max-width: 800px;
     min-height: auto;
-    padding: 35px 20px 25px;
-    margin-bottom: 25px;
+    padding: 35px 20px 10px;
+    margin-bottom: 5px;
+}
+
+.kontakt-hero p {
+    margin-bottom: 0;
 }
 
 .kontakt-layout {
@@ -482,11 +489,49 @@ main {
 footer {
     background-color: #dcd1ec;
     color: #34465c;
-    text-align: center;
     padding: 25px 15px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
 }
 
 footer p {
-    margin: 0;
+    margin: 12px 0;
     font-size: 16px;
+}
+
+.footer p:first-child {
+    text-align: left;
+}
+
+.footer p:last-child {
+    text-align: right;
+}
+
+.kontakt-oplysninger {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #c5b8d9;
+}
+
+@media (max-width: 600px) {
+    footer {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 15px 10px;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    footer p:first-child,
+    footer p:last-child {
+        text-align: center;
+    }
 }
